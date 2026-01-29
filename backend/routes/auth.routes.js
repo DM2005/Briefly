@@ -1,3 +1,4 @@
+
 import express from 'express';
 import protect from '../middlewares/auth.middlewares.js';
 import { registerValidation, loginValidation } from '../middlewares/validators.middlewares.js';
@@ -37,3 +38,4 @@ router.put('/profile', protect, updateProfile);
 router.put('/change-password', protect, changePassword);
 
 export default router;
+
